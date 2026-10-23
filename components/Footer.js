@@ -25,8 +25,7 @@ export default function Footer() {
           <h2 className="font-semibold text-white">Contact</h2>
           <ul className="mt-3 space-y-2 text-sm">
             <li><a href={`mailto:${site.email}`} className="hover:text-white">{site.email}</a></li>
-            <li><a href={`tel:${site.tel}`} className="hover:text-white">{site.phone}</a></li>
-            <li>{site.address}</li>
+            <li><a href={`https://wa.me/${site.whatsapp}`} className="hover:text-white">WhatsApp {site.whatsappDisplay}</a></li>
           </ul>
         </div>
       </div>

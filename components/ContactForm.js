@@ -31,7 +31,7 @@ export default function ContactForm() {
       <button disabled={state === "sending"} className="btn btn-cta sm:col-span-2">{state === "sending" ? "Sending..." : "Send message"}</button>
       <p role="status" className="text-sm sm:col-span-2">
         {state === "ok" && "Thanks! We will reply within one business day."}
-        {state === "error" && "That did not send. Please email hello@mapletech.world instead."}
+        {state === "error" && "That did not send. Please email Ali.Husnain@mapletech.world instead."}
       </p>
     </form>
   );

@@ -199,7 +199,7 @@ export default function Home() {
       <Section id="contact" title="Talk to a human" sub="Tell us what you need and we will reply within one business day.">
         <div className="grid gap-8 lg:grid-cols-5">
           <div className="space-y-5 lg:col-span-2">
-            {[["phone", "Phone", site.phone, `tel:${site.tel}`], ["mail", "Email", site.email, `mailto:${site.email}`], ["pin", "Visit us", site.address]].map(([i, l, v, h]) => (
+            {[["chat", "WhatsApp", site.whatsappDisplay, `https://wa.me/${site.whatsapp}`], ["mail", "Email", site.email, `mailto:${site.email}`]].map(([i, l, v, h]) => (
               <div key={l} className="flex gap-3">
                 <span className="text-brand"><Icon n={i} /></span>
                 <div><p className="font-semibold text-navy dark:text-white">{l}</p>{h ? <a href={h} className="hover:text-brand">{v}</a> : <p>{v}</p>}</div>

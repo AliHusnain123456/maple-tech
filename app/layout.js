@@ -31,7 +31,6 @@ const ld = {
   email: site.email,
   telephone: site.tel,
   priceRange: "$$",
-  address: { "@type": "PostalAddress", streetAddress: site.address },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "IT services",

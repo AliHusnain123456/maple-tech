@@ -10,7 +10,7 @@ export async function POST(req) {
     headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, "Content-Type": "application/json" },
     body: JSON.stringify({
       from: process.env.CONTACT_FROM || "Maple Tech Website <onboarding@resend.dev>",
-      to: [process.env.CONTACT_TO || "hello@mapletech.world"],
+      to: [process.env.CONTACT_TO || "Ali.Husnain@mapletech.world"],
       reply_to: email,
       subject: `New enquiry: ${service || "General"} from ${name}`,
       html: `<p><b>${esc(name)}</b> | ${esc(email)} | ${esc(phone)}</p><p>Service: ${esc(service)}</p><p>${esc(message).replace(/\n/g, "<br>")}</p>`,
